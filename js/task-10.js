@@ -19,7 +19,12 @@ console.log(divBox);
 
 function createBoxes(amount) {
   for (let i = 0; i < amount; i += 1) {
-    return document.createElement("div");
+    const newDiv = document.createElement("div");
+    newDiv.style.width = `${30 + 10 * i}px`;
+    newDiv.style.height = `${30 + 10 * i}px`;
+    newDiv.style.backgroundColor = getRandomHexColor();
+    divBox.append(newDiv);
   }
 }
-console.log(createBoxes(3));
+
+console.log(createBoxes(4));
