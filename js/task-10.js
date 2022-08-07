@@ -6,6 +6,7 @@ createBtn.addEventListener("click", () => {
 const destroyBtn = document.querySelector("button[data-destroy]");
 destroyBtn.addEventListener("click", () => {
   divBox.innerHTML = "";
+  inputEl.value = "";
 });
 
 const inputEl = document.querySelector("div>input");
